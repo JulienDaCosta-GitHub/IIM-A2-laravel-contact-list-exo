@@ -22,11 +22,12 @@
                     </thead>
                     <tbody>
                     <!-- TODO : Début de la boucle -->
+                    forelse($contacts as $contact)
                     <tr>
-                        <td><!-- TODO Afficher l'id du contact --></td>
-                        <td><!-- TODO Afficher le nom du contact --></td>
-                        <td><!-- TODO Afficher le tel du contact --></td>
-                        <td><!-- TODO Afficher l'email du contact --></td>
+                        <td><!-- TODO Afficher l'id du contact -->{{$contact->id}}</td>
+                        <td><!-- TODO Afficher le nom du contact -->{{$contact->nom}}</td>
+                        <td><!-- TODO Afficher le tel du contact -->{{$contact->tel}}</td>
+                        <td><!-- TODO Afficher l'email du contact -->{{$contact->email}}</td>
                         <td>
                             <!-- TODO href de la balise <a> pour pointer vers la route de modification du contact -->
                             <a class="btn btn-primary" href="#">Modifier</a>
@@ -40,10 +41,12 @@
                         </td>
                     </tr>
                     <!-- TODO : Conditions pas de contact -->
+                    @empty
                     <tr>
                         <td>Vous n'avez pas encore de contact</td>
                     </tr>
                     <!-- TODO : FIN Boucle -->
+                    @endforelse
                     </tbody>
                 </table>
             </div>
