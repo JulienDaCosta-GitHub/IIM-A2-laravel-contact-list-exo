@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <h3>Créer un contact</h3>
                     <!-- TODO mise en place de la form pour créer un contact -->
-                    <form action="{{route('form')}}" method="post">
+                    <form action="{{route('createcontact')}}" method="post">
                     <!-- Protection CSRF -->
                     @csrf
                     <!-- Methode HTTP pour la route -->

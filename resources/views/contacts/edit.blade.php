@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <h3>Modification du contact <b><!-- TODO Afficher le nom du contact --></b></h3>
                     <!-- TODO mise en place de la form pour modifier un contact -->
-                    <form action="{{route('form')}}" method="post">
+                    <form action="{{route('editcontact')}}" method="post">
                     <!-- Protection CSRF -->
                     @csrf
                     <!-- Methode HTTP pour la route -->

@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <!-- TODO href de la balise <a> pour pointer vers la route de création de contact -->
-                <a class="btn btn-primary float-right" href="#">Ajouter un contact</a>
+                <a class="btn btn-primary float-right" href="{{route('createcontact')}}">Ajouter un contact</a>
             </div>
         </div>
         <div class="row">
@@ -25,12 +25,12 @@
                     forelse($contacts as $contact)
                     <tr>
                         <td><!-- TODO Afficher l'id du contact -->{{$contact->id}}</td>
-                        <td><!-- TODO Afficher le nom du contact -->{{$contact->nom}}</td>
+                        <td><!-- TODO Afficher le nom du contact -->{{$contact->name}}</td>
                         <td><!-- TODO Afficher le tel du contact -->{{$contact->tel}}</td>
                         <td><!-- TODO Afficher l'email du contact -->{{$contact->email}}</td>
                         <td>
                             <!-- TODO href de la balise <a> pour pointer vers la route de modification du contact -->
-                            <a class="btn btn-primary" href="#">Modifier</a>
+                            <a class="btn btn-primary" href="{{route('edit')}">Modifier</a>
 
 
                             <a class="btn btn-danger"
